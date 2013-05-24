@@ -21,13 +21,8 @@ public class HomeController{
    @RequestMapping(method = RequestMethod.GET)
    public String printHello(ModelMap model) {
       model.addAttribute("message", "Hello Spring MVC Framework!");
-//      RucDaoImpl obj = new RucDaoImpl();
       
-      List lista = new ArrayList();
-      lista.add("asasdf");
-      lista.add("asasdf2");
-      
-       lista = rucDao.selectAll();
+      List lista =  rucDao.selectAll();
       model.addAttribute("lista", lista);
       return "hello";
    }

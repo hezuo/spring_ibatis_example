@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>lista ruc</title>
 </head>
 <body>
-<h2>jsp</h2>
-<p>${message }</p>
+<h2>lista ruc</h2>
+
 <ul>
 
 	<c:forEach items="${lista}" var="myItem" varStatus="loopStatus">
