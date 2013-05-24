@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap 
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Ruc">
+
+<select id="getAll" resultClass="com.springib.model.ibatis.Ruc">
+   SELECT * FROM ruc
+</select>
+
+<update id="update" parameterClass="com.springib.model.ibatis.Ruc">
+   UPDATE ruc
+   SET    nombre = #nombre#
+   WHERE  id = #id#
+</update>
+
+</sqlMap>
